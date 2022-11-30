@@ -10,6 +10,12 @@ Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dat
 Le validazioni e i controlli possiamo farli anche in un secondo momento.
 */
 
+let main = document.getElementById('main-square-container');
+
+let mainSquare = document.createElement('div');
+mainSquare.classList.add('main-square');
+// DA INSERIRE AL PRERMERE DEL PULSANTE
+main.append(mainSquare);
 
 
 
