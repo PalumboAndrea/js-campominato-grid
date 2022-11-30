@@ -1,5 +1,17 @@
-.palindrome,
-#user-choice,
-#computer-choice{
-    height: 50px;
+header{
+    height: 90px;
+}
+
+main{
+    background-color: rgb(127,255,211);
+    height: 80vh;
+}
+
+footer{
+    height: 40px;
+}
+
+#logo{
+    width: 300px;
+    background-color: yellow;
 }
