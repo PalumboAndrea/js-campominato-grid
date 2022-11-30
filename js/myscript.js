@@ -19,7 +19,14 @@ let main = document.getElementById('main-square-container');
 let mainSquare = document.createElement('div');
 mainSquare.classList.add('main-square', 'd-flex', 'flex-wrap');
 
+let miniSquares
 
+function getMiniSquareColored(x){
+    x.addEventListener('click', function(){
+        x.classList.toggle('light-blue')
+    })
+    
+}
 
 let num = 0;
 
@@ -27,12 +34,16 @@ button.addEventListener('click', function(){
     main.append(mainSquare);
 
     for (let i=0; i<100; i++){
-        let miniSquares = document.createElement('div');
+        miniSquares = document.createElement('div');
         miniSquares.classList.add('mini-square', 'd-flex', 'justify-content-center', 'align-items-center');   
         mainSquare.append(miniSquares);
         num = num +1
         miniSquares.append(num);
+        getMiniSquareColored(miniSquares);
     }
+
+    
+
 
     
 })

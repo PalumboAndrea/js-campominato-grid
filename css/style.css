@@ -26,3 +26,7 @@ footer{
     height: calc(100% / 10);
     border: 1px solid black;
 }
+
+.light-blue{
+    background-color: magenta;
+}
