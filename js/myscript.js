@@ -21,11 +21,11 @@ mainSquare.classList.add('main-square', 'd-flex', 'flex-wrap');
 
 let miniSquares
 
-function getMiniSquareColored(x){
-    x.addEventListener('click', function(){
-        x.classList.toggle('light-blue')
+function getMiniSquareColored(a, b){
+    a.addEventListener('click', function(){
+        a.classList.toggle('light-blue')
+        confirm("Hai selezionato la cella " + b);
     })
-    
 }
 
 let num = 0;
@@ -39,12 +39,8 @@ button.addEventListener('click', function(){
         mainSquare.append(miniSquares);
         num = num +1
         miniSquares.append(num);
-        getMiniSquareColored(miniSquares);
+        getMiniSquareColored(miniSquares, i);
     }
-
-    
-
-
     
 })
 
