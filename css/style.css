@@ -1,19 +1,10 @@
 header{
-    height: 90px;
+    height: 12vh;
 }
 
 main{
     background-color: rgb(127,255,211);
     height: 80vh;
-}
-
-footer{
-    height: 40px;
-}
-
-#logo{
-    width: 300px;
-    background-color: yellow;
 }
 
 .main-square{
@@ -30,3 +21,7 @@ footer{
 .light-blue{
     background-color: magenta;
 }
+
+footer{
+    height: 8vh;
+ }

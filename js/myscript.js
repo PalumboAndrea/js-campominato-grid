@@ -16,11 +16,6 @@ let button = document.querySelector('.btn');
 
 let main = document.getElementById('main-square-container');
 
-let mainSquare = document.createElement('div');
-mainSquare.classList.add('main-square', 'd-flex', 'flex-wrap');
-
-let miniSquares
-
 function getMiniSquareColored(a, b){
     a.addEventListener('click', function(){
         a.classList.toggle('light-blue')
@@ -31,15 +26,18 @@ function getMiniSquareColored(a, b){
 let num = 0;
 
 button.addEventListener('click', function(){
+    let mainSquare = document.createElement('div');
+    mainSquare.classList.add('main-square', 'd-flex', 'flex-wrap');
     main.append(mainSquare);
 
     for (let i=0; i<100; i++){
+        let miniSquares;
         miniSquares = document.createElement('div');
         miniSquares.classList.add('mini-square', 'd-flex', 'justify-content-center', 'align-items-center');   
         mainSquare.append(miniSquares);
         num = num +1
         miniSquares.append(num);
-        getMiniSquareColored(miniSquares, i);
+        getMiniSquareColored(miniSquares, i+1);
     }
     
 })
