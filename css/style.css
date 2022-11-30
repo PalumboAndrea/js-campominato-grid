@@ -19,5 +19,10 @@ footer{
 .main-square{
     height: 80%;
     width: 60%;
+}
+
+.mini-square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
     border: 1px solid black;
 }
