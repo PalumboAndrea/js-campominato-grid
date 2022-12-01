@@ -18,7 +18,7 @@ let main = document.getElementById('main-square-container');
 
 function getMiniSquareColored(a, b){
     a.addEventListener('click', function(){
-        a.classList.toggle('light-blue')
+        a.classList.add('light-blue')
         confirm("Hai selezionato la cella " + b);
     })
 }
@@ -40,7 +40,7 @@ button.addEventListener('click', function(){
         getMiniSquareColored(miniSquares, i+1);
     }
     
-})
+}, {once: true})
 
 
 
